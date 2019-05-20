@@ -1,0 +1,121 @@
+﻿<Window x:Class="DatabaseTestFoop202.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabaseTestFoop202"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl TabStripPlacement="Top">
+        <TabItem Name="Q1" Header="Q1" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnEx1" Content="Button" Height="25" Width="75" Click="btnEx1_Click_1"/>
+                <ListBox Name="lbxCustomersQ1" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q2" Header="Q2" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn2" Content="Button" Height="25" Width="75" Click="btn2_Click"/>
+                <DataGrid Name="dgrCustomersQ2" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q3" Header="Q3" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn3" Content="Button" Height="25" Width="75" Click="btn3_Click"/>
+                <DataGrid Name="dgrCustomersQ3" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q4" Header="Q4" Width="50">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn4" Content="Get all categories" Height="25" MinWidth="75" Click="btn4_Click"/>
+                <ListBox Name="lbxCustomersQ4first" SelectedValuePath="ProductCategoryID" DisplayMemberPath="Name" Grid.Row="1" Grid.Column="0" MinHeight="200" Margin="10" SelectionChanged="lbxCustomersQ4first_SelectionChanged"/>
+                <ListBox Name="lbxCustomersQ4second" DisplayMemberPath="Name" Grid.Row="1" Grid.Column="1" MinHeight="200" Margin="10"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q5" Header="Q5" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn5" Content="Button" Height="25" Width="75" Click="btn5_Click"/>
+                <DataGrid Name="dgrCustomersQ5" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q6" Header="Q6" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn6" Content="Button" Height="25" Width="75" Click="btn6_Click"/>
+                <DataGrid Name="dgrCustomersQ6" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q7" Header="Q7" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn7" Content="Button" Height="25" Width="75" Click="btn7_Click"/>
+                <DataGrid Name="dgrCustomersQ7" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q8" Header="Q8" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn8" Content="Button" Height="25" Width="75" Click="btn8_Click"/>
+                <DataGrid Name="dgrCustomersQ8" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q9" Header="Q9" Width="50">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn9" Content="Get categories with products" Height="25" MinWidth="75" Click="btn9_Click"/>
+                <ListBox Name="lbxCustomersQ9first" DisplayMemberPath="Name" SelectedValuePath="ProductCategoryID" Grid.Row="1" Grid.Column="0" MinHeight="200" Margin="10" SelectionChanged="lbxCustomersQ9first_SelectionChanged"/>
+                <ListBox Name="lbxCustomersQ9second" Grid.Row="1" Grid.Column="1" MinHeight="200" Margin="10"/>
+            </Grid>
+        </TabItem>
+        <TabItem Name="Q10" Header="Q10" Width="50">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btn10" Content="Button" Height="25" Width="75" Click="btn10_Click"/>
+                <DataGrid Name="dgrLast" Grid.Row="1" Grid.Column="0" MinHeight="200"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
